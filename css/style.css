@@ -1,0 +1,266 @@
+:root {
+	/* Background */
+	--basic-header:#EEEEEE;
+	--basic-background:888888;
+
+	/*Words*/
+	--basic-headlines:#000000;
+	--basic-paragraph:#283136;
+	--basic-сontact-information:#666666;
+	--basic-footer-sile:#444444;
+
+	/*Logo*/
+	--basic-logo:#000000;
+	--basic-logo-hover:#000000;
+	--basic-logo-push:#A6A6A6;
+
+	/*Navigation*/
+	--basic-nav:#000000;
+	--basic-nav-hover:#FB565A;
+	--basic-nav-push:#000000;
+
+	/*Button*/
+	--basic-button-words:#FFFFFF;
+	--basic-button:#FB565A;
+	--basic-button-app:#00CA74;
+	--basic-button-present:#EFC849;
+	--basic-button-filter:#EEEEEE;
+
+	--basic-button-hover:#E74246;
+	--basic-button-app-hover:#00BC6C;
+	--basic-button-present-hover:#EAB534;
+	--basic-button-filter-hover:#DFDFDF;
+
+	--basic-button-push:#D7373B;
+	--basic-button-app-push:#00AA62;
+	--basic-button-present-push:#E5A722;
+	--basic-button-filter-push:#D5D5D5;
+
+	/*Social networks*/
+	--basic-social:#E1E1E1;
+	--basic-social-icon:#FFFFFF;
+	--basic-social-hover:#E74246;	
+	--basic-social-push:#D7373B;
+
+	/*Checkbox*/
+	--basic-checkbox:#;
+	--basic-checkbox-hover:#;	
+	--basic-checkbox-push:#;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-paragraph);
+  background-color: var(--basic-background);
+}
+
+a {
+ text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-nav);
+  background-color: transparent;
+  background-color: var(--basic-header);
+}
+
+.site-navigation,
+.cart-link {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.cart-link  {
+  color: var(--basic-nav);
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.cart-link:hover {
+  color: var(--basic-nav-hover);
+}
+
+.site-navigation a:focus,
+.cart-link:focus {
+  color: var(--basic-nav-push);
+  opacity: 0.3;
+}
+
+/* Features */
+.features {
+  background-color: var(--basic-header);
+}
+.features h3 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: left;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Button */
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--basic-button);
+  border-radius: 3px;
+  color: var(--basic-button-words);
+  background-color: var(--basic-button);
+  padding: 80px, 25px;
+}
+
+.button-app {
+  border: 1px solid var(--basic-button-app);
+  background-color: var(--basic-button-app);
+}
+
+.button-presentations {
+  border: 1px solid var(--basic-button-present);
+  background-color: var(--basic-button-present);
+}
+
+.button:hover{
+  border: 1px solid var(--basic-button-hover);
+  background-color: var(--basic-button-hover);
+}
+
+.button-app:hover{
+  border: 1px solid var(--basic-button-app-hover);
+  background-color: var(--basic-button-app-hover);
+}
+
+.button-presentations:hover{
+  border: 1px solid var(--basic-button-present-hover);
+  background-color: var(--basic-button-present-hover);
+}
+
+.button:focus{
+  border: 1px solid var(--basic-button-push);
+  background-color: var(--basic-button-push);
+}
+
+.button-app:focus{
+  border: 1px solid var(--basic-button-app-push);
+  background-color: var(--basic-button-app-push);
+}
+
+.button-presentations:focus{
+  border: 1px solid var(--basic-button-present-push);
+  background-color: var(--basic-button-present-push);
+}
+
+/* Description */
+
+.description p:nth-child(2){
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.description p:nth-child(4){
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description-list {
+  list-style: none;
+}
+
+.description-item {
+  text-align: left;
+}
+
+/* Requirements */
+
+.requirements-list {
+  list-style: none;
+}
+.requirements-item {
+display: inline-block;
+}
+.requirements h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.requirements h4 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+.percent { 
+  font-style: normal;
+  font-size: 26px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: text-top;
+
+}
+
+/* Partfolio */
+.partfolio-list {
+  list-style: none;
+}
+
+/* Footer */
+.footer-contacts p:nth-child(2){
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.footer-contacts p:nth-child(3){
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-сontact-information);
+}
+.footer-contacts a:nth-child(3){
+  color: var(--basic-сontact-information);
+}
+.social-list{
+  list-style: none;
+}
+.friendship h3 {
+  color: var(--basic-headlines);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+.friendship p{
+  color: var(--basic-footer-sile);
+  font-size: 16px;
+  line-height: 22px;
+}
+
