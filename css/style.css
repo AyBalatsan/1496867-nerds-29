@@ -52,7 +52,7 @@ body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -98,8 +98,8 @@ img {
   color: var(--basic-nav-hover);
 }
 
-.site-navigation a:focus,
-.cart-link:focus {
+.site-navigation a:active,
+.cart-link:active {
   color: var(--basic-nav-push);
   opacity: 0.3;
 }
@@ -167,17 +167,17 @@ img {
   background-color: var(--basic-button-present-hover);
 }
 
-.button:focus{
+.button:active{
   border: 1px solid var(--basic-button-push);
   background-color: var(--basic-button-push);
 }
 
-.button-app:focus{
+.button-app:active{
   border: 1px solid var(--basic-button-app-push);
   background-color: var(--basic-button-app-push);
 }
 
-.button-presentations:focus{
+.button-presentations:active{
   border: 1px solid var(--basic-button-present-push);
   background-color: var(--basic-button-present-push);
 }
