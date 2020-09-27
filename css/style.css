@@ -25,16 +25,21 @@
 	--basic-button-app:#00CA74;
 	--basic-button-present:#EFC849;
 	--basic-button-filter:#EEEEEE;
+	--basic-button-page:#EEEEEE;
 
 	--basic-button-hover:#E74246;
 	--basic-button-app-hover:#00BC6C;
 	--basic-button-present-hover:#EAB534;
 	--basic-button-filter-hover:#DFDFDF;
+	--basic-button-page-hover:#DFDFDF;
 
 	--basic-button-push:#D7373B;
 	--basic-button-app-push:#00AA62;
 	--basic-button-present-push:#E5A722;
 	--basic-button-filter-push:#D5D5D5;
+	--basic-button-page-push:#D5D5D5;
+
+	--basic-button-page-active: rgba(0, 0, 0, 0.0001);
 
 	/*Social networks*/
 	--basic-social:#E1E1E1;
@@ -262,3 +267,72 @@ display: inline-block;
   line-height: 22px;
 }
 
+/* Style catalog */
+
+.store-title {
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--basic-headlines);
+	background-color: var(--basic-header);
+}
+/* Sorting-form */
+
+.sorting-form h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-headlines);
+}
+.sorting-form-list-1,
+.sorting-form-list-2 {
+	list-style: none;
+}
+.sorting-form-item-1{
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--basic-headlines);
+}
+/*sorting-form-list-2 не стал пока прописывать так как нужно скрыть текст,
+а так же вставить треугольнички с убыванием и возрастанием*/
+
+/* Products */
+.products-list {
+	list-style: none;
+}
+.product-title {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-headlines);
+}
+.product-description {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-сontact-information);
+}
+/* Turning pages */
+.turning-pages-list {
+	list-style: none;
+}
+.button-page {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 3px solid var(--basic-button-page);
+	border-radius: 3px;
+	color: var(--basic-headlines);
+	background-color: var(--basic-button-page);
+	padding: 17px 20px 15px 20px;
+}
+.button-page:hover {
+	border: 3px solid var(--basic-button-page-hover);
+	background-color: var(--basic-button-page-hover);
+}
+.button-page:active{
+  border: 3px solid var(--basic-button-page-push);
+  background-color: var(--basic-button-page-push);
+}
