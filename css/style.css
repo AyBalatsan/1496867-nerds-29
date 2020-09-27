@@ -49,9 +49,8 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
-  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -139,7 +138,7 @@ img {
   border-radius: 3px;
   color: var(--basic-button-words);
   background-color: var(--basic-button);
-  padding: 80px, 25px;
+  padding: 80px 25px;
 }
 
 .button-app {
@@ -184,13 +183,13 @@ img {
 
 /* Description */
 
-.description p:nth-child(2){
+.сompany-description{
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
 }
 
-.description p:nth-child(4){
+.execution-of-works{
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -226,7 +225,6 @@ display: inline-block;
   font-size: 26px;
   line-height: 40px;
   display: inline-block;
-  vertical-align: text-top;
 
 }
 
@@ -236,17 +234,17 @@ display: inline-block;
 }
 
 /* Footer */
-.footer-contacts p:nth-child(2){
+.сompany-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
-.footer-contacts p:nth-child(3){
+.company-address {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-сontact-information);
 }
-.footer-contacts a:nth-child(3){
+.footer-phone {
   color: var(--basic-сontact-information);
 }
 .social-list{
