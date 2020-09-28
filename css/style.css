@@ -285,17 +285,18 @@ display: inline-block;
 	text-transform: uppercase;
 	color: var(--basic-headlines);
 }
-.sorting-form-list-1,
-.sorting-form-list-2 {
+.sort-type-list,
+.sort-direction-list {
 	list-style: none;
 }
-.sorting-form-item-1{
+.sort-type-item a{
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-headlines);
+	color: inherit;
 }
-/*sorting-form-list-2 не стал пока прописывать так как нужно скрыть текст,
+/*sort-direction-item a не стал пока прописывать так как нужно скрыть текст,
 а так же вставить треугольнички с убыванием и возрастанием*/
 
 /* Products */
