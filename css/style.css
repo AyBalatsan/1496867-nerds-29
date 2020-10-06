@@ -143,7 +143,10 @@ img {
   border-radius: 3px;
   color: var(--basic-button-words);
   background-color: var(--basic-button);
-  padding: 80px 25px;
+  display: block;
+  width: 160px;
+  height: 50px;
+
 }
 
 .button-app {
@@ -334,6 +337,110 @@ display: inline-block;
 	background-color: var(--basic-button-page-hover);
 }
 .button-page:active{
-  border: 3px solid var(--basic-button-page-push);
-  background-color: var(--basic-button-page-push);
+	border: 3px solid var(--basic-button-page-push);
+	background-color: var(--basic-button-page-push);
+}
+h1, h2 {
+	display: none;/* Скрыл так как мешает*/
+}
+/* Grid */
+
+.page {
+	height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+.main-navigation {
+	background-color: var(--basic-header);
+}
+.main-navigation-wrapper {
+	display: grid;
+	grid-template-columns: 3fr 9fr 3fr;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.center {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;	
+}
+.features {
+	background-color: var(--basic-header);
+	min-width: 100%;
+	
+}
+.features {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: 0;
+	padding: 0;
+
+}
+.services-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+	column-gap: 100px;
+}
+.block-description-requirements{
+	display: grid;
+	grid-template-columns: 8fr 4fr;
+	margin-top: 120px;
+	column-gap: 150px;
+}
+.requirements-list{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+.partfolio-list{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+.footer-contacts{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.footer-contacts img{
+	display: grid;
+	grid-column-start:1; 
+	grid-column-end:3;
+	min-width: 100%;
+}
+.inform-contacts{
+	border: 1px solid red;
+	width: 319px;
+	height: 308px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+}
+.inform-contacts-center{
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+	/*Я не понимаю как этот блок оцентровать по сетке и натянуть слой на карту*/
+}
+.shell-footer-social-friendship{
+	display: grid;
+	grid-template-columns: 4fr 8fr;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+	background-color: green;/*Временный фон для отображения соц сетей*/
+}
+
+.modal-feedback {/*Временно отключенно*/
+	display: none;
 }
