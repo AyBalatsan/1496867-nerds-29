@@ -2,6 +2,7 @@
 	/* Background */
 	--basic-header:#EEEEEE;
 	--basic-background:888888;
+	--basic-background-inform-box:#FFFFFF;
 
 	/*Words*/
 	--basic-headlines:#000000;
@@ -360,10 +361,7 @@ h1, h2 {
 }
 .main-navigation-wrapper {
 	display: grid;
-	grid-template-columns: 3fr 9fr 3fr;
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 10px;
+	grid-template-columns: 1fr 3fr 1fr;
 }
 
 .center {
@@ -385,14 +383,14 @@ h1, h2 {
 }
 .services-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 300px 300px 300px;
 	margin: 0;
 	padding: 0;
 	column-gap: 100px;
 }
 .block-description-requirements{
 	display: grid;
-	grid-template-columns: 8fr 4fr;
+	grid-template-columns: 2fr 1fr;
 	margin-top: 120px;
 	column-gap: 150px;
 }
@@ -410,37 +408,35 @@ h1, h2 {
 }
 .footer-contacts{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 54px auto 54px; 
 }
-.footer-contacts img{
-	display: grid;
+
+.map-block{
 	grid-column-start:1; 
-	grid-column-end:3;
+	grid-column-end:-1;
+	grid-row-start:1; 
+	grid-row-end:-1;
 	min-width: 100%;
 }
 .inform-contacts{
+	grid-column-start:3; 
+	grid-column-end:4;
+	grid-row-start:2; 
+	grid-row-end:3;
 	border: 1px solid red;
 	width: 319px;
 	height: 308px;
 	margin: 0 auto;
 	padding: 0 10px;
-	
-}
-.inform-contacts-center{
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0;
-	/*Я не понимаю как этот блок оцентровать по сетке и натянуть слой на карту*/
+	background-color: var(--basic-background-inform-box);
 }
 .shell-footer-social-friendship{
 	display: grid;
-	grid-template-columns: 4fr 8fr;
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 10px;
+	grid-template-columns: 1fr 2fr;
 	background-color: green;/*Временный фон для отображения соц сетей*/
 }
-
+/* modal window */
 .modal-feedback {/*Временно отключенно*/
 	display: none;
 }
