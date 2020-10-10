@@ -407,29 +407,27 @@ h1, h2 {
 	padding: 0;
 }
 .footer-contacts{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 54px auto 54px; 
+	position: relative;
+	height: 420px;
 }
 
 .map-block{
-	grid-column-start:1; 
-	grid-column-end:-1;
-	grid-row-start:1; 
-	grid-row-end:-1;
-	min-width: 100%;
+	position: absolute;
+	z-index: 10;
+	left: 50%;	
+	top: 0;
+	transform: translateX(-50%);
+	width: 1440px;
+	height: 416px;
 }
 .inform-contacts{
-	grid-column-start:3; 
-	grid-column-end:4;
-	grid-row-start:2; 
-	grid-row-end:3;
 	border: 1px solid red;
 	width: 319px;
 	height: 308px;
-	margin: 0 auto;
 	padding: 0 10px;
 	background-color: var(--basic-background-inform-box);
+	position: relative;
+	z-index: 20;
 }
 .shell-footer-social-friendship{
 	display: grid;
