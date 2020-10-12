@@ -445,85 +445,57 @@ h1, h2 {
 }
 .shell-grid-catalog {
 	display: grid;
-	grid-template-columns: 1fr 760px;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: min-content 1fr;
 	
 }
 .filter {
 	grid-column-start: 1;
 	grid-column-end: 2;
+	
 }
-.main-content-grid{
-	grid-column-start: 2;
-	grid-column-end: 3;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: min-content 1fr 1fr 1fr min-content; 
+.vision {
+	border: 10px solid green;
+	height: 1800px;
+	width: 380px;
+
 }
 
 /* Display none временное скрытие элементов*/
 .pop-up-block{
 	display: none;
 }
-.sorting-modules{
+.sorting-form {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
-	grid-row-end: 2; 
+	grid-row-end: 2;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-.sort-type-list{
+.sorting-text {
 	grid-column-start: 1;
 	grid-column-end: 2;
 }
-.sort-direction-list{
+.sorting-modules {
 	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-end: 3;	
 }
-.products-item, .products-list{
-	padding: 0;
-	margin: 0; 	
-}
-.product-sedona {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 3; 
-}
-.product-pink{
+.products {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
-	grid-row-end: 3; 
+	grid-row-end: 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 42px; 
+	grid-row-gap: 30px;
 }
-.product-barbershop{
+.products-item:nth-child(odd){
 	grid-column-start: 1;
 	grid-column-end: 2;
-	grid-row-start: 3;
-	grid-row-end: 4; 
 }
-.product-mishka{
+.products-item:nth-child(even){
 	grid-column-start: 2;
 	grid-column-end: 3;
-	grid-row-start: 3;
-	grid-row-end: 4; 
-}
-.product-aplus {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 4;
-	grid-row-end: 5; 
-}
-.product-kvas {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 4;
-	grid-row-end: 5; 
-}
-
-.turning-pages-list {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 5;
-	grid-row-end: 6; 
 }
