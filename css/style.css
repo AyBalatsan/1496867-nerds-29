@@ -73,7 +73,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+/* Display none*/
+.phantom {
+	display: none;
+}
 /* Main navigation */
 
 .main-navigation {
@@ -147,9 +150,7 @@ img {
   display: block;
   width: 160px;
   height: 50px;
-
 }
-
 .button-app {
   border: 1px solid var(--basic-button-app);
   background-color: var(--basic-button-app);
@@ -341,9 +342,7 @@ display: inline-block;
 	border: 3px solid var(--basic-button-page-push);
 	background-color: var(--basic-button-page-push);
 }
-h1, h2 {
-	display: none;/* Скрыл так как мешает*/
-}
+
 /* Grid */
 
 .page {
@@ -438,8 +437,7 @@ h1, h2 {
 .modal-feedback {/*Временно отключенно*/
 	display: none;
 }
-.store-title { /*Востановление видимости */
-	display: inline;
+.store-title {
 	background-color: var(--basic-header);
 	
 }
@@ -454,13 +452,6 @@ h1, h2 {
 	grid-column-end: 2;
 	
 }
-.vision {
-	border: 10px solid green;
-	height: 1800px;
-	width: 200px;
-
-}
-
 /* Display none временное скрытие элементов*/
 .pop-up-block{
 	display: none;
@@ -486,24 +477,16 @@ h1, h2 {
 	grid-column-end: 3;	
 }
 .products {
-	margin: 0;
-	padding: 0;
 	grid-row-start: 2;
 	grid-row-end: 3;
+}
+.products-list{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
 	grid-column-gap: 42px; 
 	grid-row-gap: 30px;
 }
-.products-item:nth-child(odd){
-	grid-column-start: 1;
-	grid-column-end: 2;
-}
-.products-item:nth-child(even){
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
+
 .turning-pages {
 	grid-row-start: 3;
 	grid-row-end: 4;
