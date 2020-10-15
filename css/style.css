@@ -114,7 +114,8 @@ img {
 
 /* Features */
 .features {
-  background-color: var(--basic-header);
+	background-color: var(--basic-header);
+
 }
 .features h3 {
   font-weight: 500;
@@ -366,17 +367,16 @@ display: inline-block;
 .center {
 	width: 1160px;
 	margin: 0 auto;
-	padding: 0 10px;	
+	padding: 0 10px;
+
 }
+
 .features {
 	background-color: var(--basic-header);
 	min-width: 100%;
-	
-}
-.features {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	margin: 0;
+	margin-bottom: 80px;
 	padding: 0;
 
 }
@@ -431,7 +431,6 @@ display: inline-block;
 .shell-footer-social-friendship{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	background-color: green;/*Временный фон для отображения соц сетей*/
 }
 /* modal window */
 .modal-feedback {/*Временно отключенно*/
@@ -490,4 +489,53 @@ display: inline-block;
 .turning-pages {
 	grid-row-start: 3;
 	grid-row-end: 4;
+}
+/*Flex box*/
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 450px;
+	padding: 0;
+	margin: 75px 45px 9px 0;
+	
+}
+.cart-link {
+	display: flex;
+	justify-content: flex-end;
+	margin: 75px 14px 9px 25px;  
+}
+.main-header-logo {
+	padding: 0;
+	margin: 49px 0 0 0;
+}
+.social-list {
+	display: flex;
+	justify-content: flex-start;
+	width: 360px;/*Выбрал данную ширину для включения 
+	ещё одной социальной сети, так как критерий Д19*/
+
+}
+.social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width: 81px;
+	height: 81px;
+	background-color: var(--basic-social);
+	border-radius: 50%;
+	margin: 65px 9px 65px 0;
+	padding: 0;	
+}
+.friendship {
+	display: flex;
+	flex-wrap: wrap;
+	width: 660px;
+	height: 68px;
+	margin: 75px 0 74px 40px;
+}
+.friendship h3{
+	margin-bottom: 10px;
+}
+.friendship p{
+	margin: 0;
 }
