@@ -33,14 +33,79 @@
 	<div class="center">	
 		<div class="shell-grid-catalog">	
 			<section class="filter">
-				<h2 class="phantom">Фильтр</h2>
-				<h3>Стоимость:</h3>
-				 <!-- Здесь будет форма фильтра -->
-				 
+				<h2 class="visually-hidden">Фильтр</h2>
+				<form method="get" action="https://echo.htmlacademy.ru">
+    				<fieldset class="filter-fieldset">
+        				<legend class="block-name">Стоимость:</legend>
+        				<div class="range-filter">
+          					<div class="range-controls">
+            					<div class="scale">
+              						<div class="bar" style="width: 70%; margin-left: 0%">
+              						</div>
+              					</div>
+								<div class="toggle toggle-min" tabindex="0" style="left: 0%">
+								</div>
+								<div class="toggle toggle-max" tabindex="0" style="left: 60%">
+								</div>
+							</div>
+							<div class="price-controls">
+            					<label class="price min-price">
+            						от<input class="filter-input" type="number" name="min-price" value="0">
+            					</label>
+            					<label class="price max-price">
+            						до<input class="filter-input" type="number" name="max-price" value="15000">
+            					</label>
+							</div>
+        				</div>
+    				</fieldset>
+    				<fieldset  class="filter-fieldset">
+						<legend class="block-name">Сетка:</legend>
+						<ul class="filter-list">
+							<li class="filter-option filter-radio">
+								<input class="visually-hidden filter-input-radio filter-input" type="radio" name="layout" value="adaptive" id="filter-adaptive">
+								<label for="filter-adaptive">Адаптивная</label>
+							</li>
+							<li class="filter-option filter-radio">
+								<input class="visually-hidden filter-input-radio filter-input" type="radio" name="layout" value="fixed" id="filter-fixed" checked>
+								<label for="filter-fixed">Фиксированая</label>
+							</li>
+							<li class="filter-option filter-radio">
+								<input class="visually-hidden filter-input-radio filter-input" type="radio" name="layout" value="rubber" id="filter-rubber">
+								<label for="filter-rubber">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset  class="filter-fieldset">
+						<legend class="block-name">Особенности:</legend>
+						<ul class="filter-list">
+							<li class="filter-option filter-checkbox">
+							<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+							<label for="filter-slider">Слайдер</label>
+							</li>
+							<li class="filter-option filter-checkbox">
+								<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-of-advantages" id="filter-block-of-advantages">
+								<label for="filter-block-of-advantages">Блок преимуществ</label>
+							</li>
+							<li class="filter-option filter-checkbox">
+								<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+								<label for="filter-news">Новости</label>
+							</li>
+							<li class="filter-option filter-checkbox">
+								<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+								<label for="filter-gallery">Галерея</label>
+							</li>
+							<li class="filter-option filter-checkbox">
+								<input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+								<label for="filter-basket">Корзина</label>
+							</li>
+						</ul>
+						</fieldset>
+						<button type="submit" class="filter-button button">Показать</button>
+       			</form>	 
 			</section>
 			<div class="sorting-products-button">
 				<section class="sorting-form">
-					<h2 class="phantom">Форма сортировки</h2>
+					<h2 class="visually-hidden">Форма сортировки</h2>
 					<h3 class="sorting-text">Сортировать:</h3>
 					<div class="sorting-modules">
 						<ul class="sort-type-list">
@@ -55,10 +120,10 @@
 					</div>	
 				</section>
 				<section class="products">
-					<h2 class="phantom">Товары</h2>
+					<h2 class="visually-hidden">Товары</h2>
 					<ul class="products-list">
 						<li class="products-item">
-							<h3><a href="#">Sedona</a></h3>
+							<h3 class="visually-hidden"><a href="#">Sedona</a></h3>
 							<img src="img/catalog/group-sedona.jpg" width="358" height="578" alt="Sedona">
 							<div class="pop-up-block">	
 								<p class="product-title">Sedona</p>
@@ -67,7 +132,7 @@
 							</div>	
 						</li>
 						<li class="products-item">
-							<h3><a href="#">Pink</a></h3>
+							<h3 class="visually-hidden"><a href="#">Pink</a></h3>
 							<img src="img/catalog/group-pink.jpg" width="358" height="578" alt="pink">
 							<div class="pop-up-block">	
 								<p class="product-title">pink app</p>
@@ -76,7 +141,7 @@
 							</div>	
 						</li>
 						<li class="products-item product-barbershop">
-							<h3><a href="#">Barbershop</a></h3>
+							<h3 class="visually-hidden"><a href="#">Barbershop</a></h3>
 							<img src="img/catalog/group-barbershop.jpg" width="358" height="578" alt="barbershop">
 							<div class="pop-up-block">
 								<p class="product-title">barbershop</p>
@@ -85,7 +150,7 @@
 							</div>	
 						</li>
 						<li class="products-item product-mishka">
-							<h3><a href="#">Mishka</a></h3>
+							<h3 class="visually-hidden"><a href="#">Mishka</a></h3>
 							<img src="img/catalog/group-mishka.jpg" width="358" height="578" alt="mishka">
 							<div class="pop-up-block">
 								<p class="product-title">mishka</p>
@@ -94,7 +159,7 @@
 							</div>	
 						</li>
 						<li class="products-item product-aplus">
-							<h3><a href="#">Aplus</a></h3>
+							<h3 class="visually-hidden"><a href="#">Aplus</a></h3>
 							<img src="img/catalog/group-up.jpg" width="358" height="578" alt="Aplus">
 							<div class="pop-up-block">
 								<p class="product-title">a plus</p>
@@ -103,7 +168,7 @@
 							</div>	
 						</li>
 						<li class="products-item product-kvas">
-							<h3><a href="#">Kvas</a></h3>
+							<h3 class="visually-hidden"><a href="#">Kvas</a></h3>
 							<img src="img/catalog/group-kvas.jpg" width="358" height="578" alt="Kvas">
 							<div class="pop-up-block">
 								<p class="product-title">кваст</p>
@@ -126,7 +191,7 @@
 	</main>
 	<footer class="page-footer main-footer">
 		<section class="footer-contacts">
-			<h2 class="phantom">Контактная информация</h2>
+			<h2 class="visually-hidden">Контактная информация</h2>
 			<div class="inform-contacts center">
 				<p class="сompany-name">NЁRDS DESIGN STUDIO</p>
 				<p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.<a class="footer-phone" href="tel:+78132757575">+7 (812) 275 75 75</a></p>
@@ -138,7 +203,7 @@
 		</section>
 		<div class="shell-footer-social-friendship center">
 			<section class="footer-social">
-				<h2 class="phantom">Социальные сети</h2>
+				<h2 class="visually-hidden">Социальные сети</h2>
 				<ul class="social-list">
 					<li class="social-item"><a class="social-button" href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="vk"></a></li>
 					<li class="social-item"><a class="social-button" href="#"><img src="img/icon-fb.svg" width="12"	height="22" alt="fbook"></a></li>
@@ -152,7 +217,7 @@
 		</div>
 	</footer>
 	<section class="modal-feedback">
-  		<h2 class="phantom">Напишите нам</h2>
+  		<h2 class="visually-hidden">Напишите нам</h2>
   		<!-- Здесь будет форма контакта с нами -->
   		<button class="button-close" type="button">Закрыть</button>
 	</section>
