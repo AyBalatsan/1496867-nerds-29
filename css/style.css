@@ -142,14 +142,17 @@ img {
 	display: flex;
 	justify-content: flex-end;
 	margin: 75px 14px 9px 0px;
-	position: relative;  
+	position: relative;
+	  
 }
-.cart-link a::before {
+.cart-link::before {
 	content: "";
 	position: absolute;
+	top: 7px;
+	left: 45px;
 	width: 15px;
-	height: 11px;
-	background-image: url("img/cart-icon.svg");
+	height: 15px;
+	background-image: url("../img/cart-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -647,6 +650,15 @@ display: inline-block;
 	border-radius: 50%;
 	margin: 65px 9px 65px 0;
 	padding: 0;	
+}
+.social-item:hover {
+	background-color: var(--basic-social-hover);
+}
+.social-item:active { 
+	background-color: var(--basic-social-push);
+}
+.social-button:active {
+	opacity: 0.3;
 }
 .friendship {
 	display: flex;
