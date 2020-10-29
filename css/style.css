@@ -108,8 +108,7 @@ img {
 
 .button {
 	display: block;
-	width: 160px;
-	height: 50px;
+	width: 158px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -117,7 +116,9 @@ img {
 	border-radius: 3px;
 	color: var(--basic-button-words);
 	background-color: var(--basic-button);
-	
+	padding-top: 12px;
+	padding-bottom: 12px;
+
 }
 .button-app {
 	border: 1px solid var(--basic-button-app);
@@ -186,9 +187,8 @@ img {
 
 }
 .site-navigation li {
-	margin-top: 10px;
-	margin-right: 45px;
-
+	margin-top: 9px;
+    margin-right: 44px;
 }
 .site-navigation,
 .cart-link {
@@ -230,7 +230,7 @@ img {
 /* Features */
 .inside-features{
 	background-color: var(--basic-header);
-	margin-bottom: 80px;
+	margin-bottom: 73px;
 }
 .features {
 	display: grid;
@@ -245,12 +245,21 @@ img {
   margin-bottom: 0px;
 }
 .features p {
-	margin-top: 26px;
+	margin-top: 28px;
+
 }
 .button-features{
-
+	margin-top: 39px;
+    width: 237px;
 }
-
+.features-img {
+	margin-top: -12px;
+    margin-left: -2px;
+}
+.features-carousel{
+	padding: 0;
+	margin-bottom: 0;
+}
 /* Services */
 .services-list {
 	list-style: none;
@@ -267,30 +276,69 @@ img {
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
+	margin-top: 18px;
+	margin-bottom: 9px;
 }
-
+.services-item p {
+	width: 260px;
+	margin-bottom: 33px;
+}
 
 /* Description */
 
-.сompany-description{
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 45px;
+.block-description-requirements{
+	border-top: 2px solid var(--basic-header);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-top: 80px;
+	column-gap: 150px;
 }
 
-.execution-of-works{
+.сompany-description {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	margin-top: 73px;
+	margin-bottom: 0;
+}
+.description p:nth-child(3) {
+	margin-top: 33px;
+	margin-bottom: 0;
+}	
+
+.execution-of-works {
 	text-transform: uppercase;
 	font-weight: bold;
+	margin-top: 40px;
 }
 
 .description-list {
+	padding: 0;
 	list-style: none;
 }
 .description-item {
 	text-align: left;
+	margin-top: 24px;
+	margin-left: 36px;
+	position: relative;
+
+}
+.description-item::before {
+	content: "";
+	position: absolute;
+	border-bottom: 2px solid var(--basic-nav-hover);
+	width: 25px;
+	height: 2px;
+	bottom: 12px;
+	left: -37px;
 }
 
 /* Requirements */
+
+.requirements {
+	margin-top: 38px;
+    margin-left: -22px
+}
 
 .requirements-list {
 	list-style: none;
@@ -303,29 +351,72 @@ img {
 display: inline-block;
 }
 .requirements h3 {
-  text-transform: uppercase;
-  font-weight: bold;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 31px;
+	margin-left: 16px;
 }
+
 .requirements h4 {
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 64px;
+	margin-top: 14px;
+    margin-left: -1px;
+    margin-bottom: 0;
+}
+.requirements-item	{
+	padding: 0;
+	margin: 0;
 }
 .percent { 
-  font-style: normal;
-  font-size: 26px;
-  line-height: 40px;
-  display: inline-block;
+	font-style: normal;
+	font-size: 26px;
+	line-height: 40px;
+	display: inline-block;
+	top: -15px;
+}
+.requirements-paragraph {
+	margin-top: 12px;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 /* Partfolio */
-
+.partfolio {
+	margin-top: 55px;
+	/*padding-top: 45px;*/
+	
+}
 .partfolio-list {
 	list-style: none;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 46px 44px 39px 32px;
+	border-top: 2px solid var(--basic-header);
+    border-bottom: 2px solid var(--basic-header);
+
+}
+/*.partfolio-item {
 	margin: 0;
 	padding: 0;
+}
+
+*/
+.partfolio-html{
+
+}
+.partfolio-barber{
+
+}
+.partfolio-pink{
+
+}
+.partfolio-mishka{
+
 }
 .partfolio-link {
 	opacity: 0.2;
@@ -336,6 +427,7 @@ display: inline-block;
 .partfolio-link:active {
 	opacity: 0.1;
 }
+
 /* Style catalog */
 
 .store-title {
@@ -476,13 +568,6 @@ display: inline-block;
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 10px;
-}
-
-.block-description-requirements{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	margin-top: 120px;
-	column-gap: 150px;
 }
 
 .shell-grid-catalog {
